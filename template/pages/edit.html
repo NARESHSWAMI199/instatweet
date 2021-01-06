@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<div class="container p-5 col-6 shadow-sm bg-sm offset-3 mt-5">
+    <h3>Edit Your Profile</h3>
+
+    <form class='form-group' method="POST" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        <label class="mt-4 mb-4" for="image"> <span class=" mx-auto  rounded-circle px-4 py-3 border  outline-dark">
+            <i class="fa fa-user text-muted"></i></span> Upload Profile ..
+            <input type="file" name="image" id='image' class="d-none">
+        </label>
+        <br>
+        <label class="mt-2" for="firstname">First Name :
+            <input type="text" name="first_name" id='firstname' class="form-control">
+        </label>
+        <label class="mt-2" for="lastname"> Last Name :
+            <input type="text" name="last_name" id='lastname' class="form-control">
+        </label>
+        <br>
+        <label class="mt-2" for="email"> Email :
+            <input type="text" name="email" id='email' class="form-control">
+        </label>
+        <br>
+        <label class="mt-2" for="location"> Location :
+            <input type="text" name="location" id='location' class="form-control">
+        </label>
+        <br>
+        <label class="mt-2" for="bio"> Bio :
+            <textarea name="bio" id="bio" cols="60" rows="5" class="form-control"></textarea>
+        </label>
+        <br>
+        <button type="submit" class="btn w-100 mt-2 btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

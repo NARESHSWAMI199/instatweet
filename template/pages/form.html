@@ -1,0 +1,12 @@
+{% load crispy_forms_tags %}
+
+<form action="." class=" container mt-5" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if title %}
+    <h2 class="mt-4"> {{ title }} </h2>
+    {% else %}
+    <h2>Tweet Create Form </h2>
+    {% endif %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary"> {% if btn_label %} {{btn_label}} {% else %} submit {% endif %} </button>
+</form>
