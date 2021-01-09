@@ -18,10 +18,11 @@ class TweetActionsSerializer(serializers.Serializer):
 
 
 class TweetCreateSerializer(serializers.ModelSerializer):
+    profile = ProfileSerializer(source="user.profile",read_only=True)
     likes = serializers.SerializerMethodField(read_only=True)
     class Meta:
         model = Tweet
-        fields = ['content','image','id','likes']
+        fields = ['profile','content','image','id','likes']
 
     def validate_content(self,value):
         if len(value) > 124:
@@ -38,6 +39,7 @@ class TweetSerializer(serializers.ModelSerializer):
     profile = ProfileSerializer(source="user.profile",read_only=True)
     parent = TweetCreateSerializer(read_only=True)
     likes = serializers.SerializerMethodField(read_only=True)
+    parent = TweetCreateSerializer(read_only=True)
     class Meta:
         model = Tweet
         fields = ['profile','content','image','id','likes','parent']

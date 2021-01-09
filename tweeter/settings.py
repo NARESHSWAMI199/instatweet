@@ -130,9 +130,9 @@ DEFAULT_AUTHENTICATION_CLASSES =  [
     'rest_framework.authentication.SessionAuthentication',
 ]
 # if DEBUG:
-#     # DEFAULT_RENDERER_CLASSES .append('rest_framework.renderers.BrowsableAPIRenderer')
+#     DEFAULT_RENDERER_CLASSES .append('rest_framework.renderers.BrowsableAPIRenderer')
 #     DEFAULT_AUTHENTICATION_CLASSES.append('rest_framework.authentication.BasicAuthentication')
-#     # DEFAULT_AUTHENTICATION_CLASSES.append('tweeter.rest_api.dev.DevAuthenciation')
+# #     # DEFAULT_AUTHENTICATION_CLASSES.append('tweeter.rest_api.dev.DevAuthenciation')
 
 
 REST_FRAMEWORK = { 
