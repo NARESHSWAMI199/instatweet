@@ -32,6 +32,12 @@ here you have two to open this.
  pip3 install djangorestframework  # this is a thrid party api wich help for a nice server response or controll 
  pip3 install django-crispy-forms  # this is using for apply the bootstrap with django forms 
  ```
+ # Now run 
+ 
+ ```
+ $ python3 manage.py runserver  # if you are using window simple write python not python3
+ ```
+ 
  Note : you need any extra module to run this project then simply go on  https://pypi.org  and install from here. 
  
  
