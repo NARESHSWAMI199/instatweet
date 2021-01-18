@@ -27,11 +27,11 @@ here you have two to open this.
  $ pip install djagno // for windows
  $ pip3 install pillow  // this is using for images  this is a python module you must need if you used any image in your python project 
  
- # Third Party packages which i used here 
+ -> Third Party packages which i used here 
  pip3 install djangorestframework  // this is a thrid party api wich help for a nice server response or controll 
  pip3 install django-crispy-forms  // this is using for apply the bootstrap with django forms 
  
- # Note you need any extra module to run this project then simply go on  https://pypi.org  and install from here. 
+ Note : you need any extra module to run this project then simply go on  https://pypi.org  and install from here. 
  
  
  
