@@ -1,4 +1,4 @@
-# instatweet
+# Instatweet
 - this is a instagram type site this  this i add a new feature here you can retweet on any post like tweeter. here you can like, dislike,follow,create a profile and so manything
 
 - Used django framework  
