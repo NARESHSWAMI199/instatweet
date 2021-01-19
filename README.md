@@ -4,7 +4,7 @@
 - Used django framework  
 django a framework in python like laravel in php .this site completly dianamic or responsive 
 
-# How to run this project
+## How to run this project
 
 ### Install Django 
 
