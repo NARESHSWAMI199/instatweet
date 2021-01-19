@@ -31,7 +31,7 @@ django a framework in python like laravel in php .this site completly dianamic o
 
  - Add bootstarp with django forms
  ```
- pip3 install django-crispy-forms  # this is using for apply the bootstrap with django forms 
+ pip3 install django-crispy-forms  
  ```
  # Now run 
  
