@@ -11,16 +11,12 @@ django a framework in python like laravel in php .this site completly dianamic o
 - if you are a window user write python not python3 in cmd
 
 
-#### For linux and mac
+- For linux and mac
  ```
  $ pip3 install django
  ```
- #### For windows
- ```
- $ pip install djagno 
- ```
- 
- - install pillow for work with image in python you must need 
+
+ - install pillow for work with image in python you must need this module
  ```
  $ pip3 install pillow    
  ```
